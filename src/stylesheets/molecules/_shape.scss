@@ -1,0 +1,20 @@
+.shape {
+  width: rem(200);
+
+  + .shape {
+    margin-left: rem(30);
+  }
+}
+
+.shape--triangle {
+  @include svg-padding(455, 400);
+  width: rem(228);
+}
+
+.shape--square {
+  @include svg-padding(400, 400);
+}
+
+.shape--circle {
+  @include svg-padding(400, 400);
+}
