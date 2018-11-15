@@ -9,12 +9,21 @@
 .shape--triangle {
   @include svg-padding(455, 400);
   width: rem(228);
+  svg path {
+    fill: #FF0000;
+  }
 }
 
 .shape--square {
   @include svg-padding(400, 400);
+  svg rect {
+    fill: #0000FF;
+  }
 }
 
 .shape--circle {
   @include svg-padding(400, 400);
+  svg circle {
+    fill: #008000;
+  }
 }

@@ -7,15 +7,17 @@
 {% extends 'layouts/application.html' %}
 
 {% block content %}
-  <div id="triangle" class="shape shape--triangle">
-    <svg viewBox="0 0 455 400" xmlns="http://www.w3.org/2000/svg"><path d="M245.6 10.034L452.148 369.27c5.506 9.576 2.206 21.802-7.37 27.307a20 20 0 0 1-9.968 2.662H20c-11.046 0-20-8.954-20-20a20 20 0 0 1 2.697-10.03L210.96 9.971c5.54-9.556 17.778-12.811 27.334-7.271a20 20 0 0 1 7.307 7.333z" fill="#000" fill-rule="evenodd"/></svg>
-  </div>
+  <div class="shapes">
+    <div id="triangle" class="shape shape--triangle">
+      <svg viewBox="0 0 455 400" xmlns="http://www.w3.org/2000/svg"><path d="M245.6 10.034L452.148 369.27c5.506 9.576 2.206 21.802-7.37 27.307a20 20 0 0 1-9.968 2.662H20c-11.046 0-20-8.954-20-20a20 20 0 0 1 2.697-10.03L210.96 9.971c5.54-9.556 17.778-12.811 27.334-7.271a20 20 0 0 1 7.307 7.333z" fill="#000" fill-rule="evenodd"/></svg>
+    </div>
 
-  <div id="square" class="shape shape--square">
-    <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"><rect x="500.5" width="400" height="400" rx="20" transform="translate(-500)" fill="#000" fill-rule="evenodd"/></svg>
-  </div>
+    <div id="square" class="shape shape--square">
+      <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"><rect x="500.5" width="400" height="400" rx="20" transform="translate(-500)" fill="#000" fill-rule="evenodd"/></svg>
+    </div>
 
-  <div id="circle" class="shape shape--circle">
-    <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"><circle cx="1143" cy="201" r="200" transform="translate(-943 -1)" fill="#000" fill-rule="evenodd"/></svg>
+    <div id="circle" class="shape shape--circle">
+      <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"><circle cx="1143" cy="201" r="200" transform="translate(-943 -1)" fill="#000" fill-rule="evenodd"/></svg>
+    </div>
   </div>
 {% endblock %}
