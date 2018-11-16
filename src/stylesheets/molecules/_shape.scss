@@ -1,28 +1,36 @@
-.shape {
-  width: rem(200);
-
-  + .shape {
-    margin-left: rem(30);
-  }
-}
+$parent-width: 1335;
+$gutter-width: 60;
+$triangle-width: 457;
+$triangle-width-total: $triangle-width + $gutter-width;
+$square-width: 400;
+$square-width-total: $square-width + $gutter-width;
+$circle-width: 400;
+$shape-gutter: percentage($gutter-width/$parent-width);
 
 .shape--triangle {
-  @include svg-padding(455, 400);
-  width: rem(228);
+  width: calc(#{percentage($triangle-width-total/$parent-width)} - #{$shape-gutter});
+  @include svg-padding($triangle-width, 400);
+  margin-right: $shape-gutter;
+
   svg path {
     fill: #FF0000;
   }
 }
 
 .shape--square {
-  @include svg-padding(400, 400);
+  width: calc(#{percentage($square-width-total/$parent-width)} - #{$shape-gutter});
+  @include svg-padding($square-width, 400);
+  margin-right: $shape-gutter;
+
   svg rect {
     fill: #0000FF;
   }
 }
 
 .shape--circle {
-  @include svg-padding(400, 400);
+  width: percentage($circle-width/$parent-width);
+  @include svg-padding($circle-width, 400);
+
   svg circle {
     fill: #008000;
   }
